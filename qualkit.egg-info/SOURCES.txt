@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+qualkit/__init__.py
+qualkit/checks.py
+qualkit/report.py
+qualkit.egg-info/PKG-INFO
+qualkit.egg-info/SOURCES.txt
+qualkit.egg-info/dependency_links.txt
+qualkit.egg-info/requires.txt
+qualkit.egg-info/top_level.txt

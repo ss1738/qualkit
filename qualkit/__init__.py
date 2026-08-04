@@ -3,5 +3,5 @@
 Executable form of the 12 measured findings at
 github.com/ss1738/euroSAT-CNN-landcover
 """
-from . import checks, report  # noqa: F401
+from . import checks, report, card  # noqa: F401
 __version__ = "0.1.0"

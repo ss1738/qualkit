@@ -47,4 +47,10 @@ python3 examples/eurosat_demo.py
 - The SEU probe injects software bit flips into weights only; it is not a
   radiation test.
 
+## Assurance Cards
+
+qualkit reports can be emitted as **Assurance Cards** (spec `ASSURANCE_CARDS.md`):
+model cards that carry measured guarantees, bound to a weights digest, with the
+validity assumptions stated. Generated, never hand-written.
+
 MIT licence. Research behind every check: github.com/ss1738/euroSAT-CNN-landcover

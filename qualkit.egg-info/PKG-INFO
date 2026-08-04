@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: qualkit
+Version: 0.1.0
+Summary: Pre-flight assurance checks for compressed ML models: coverage forecasting, set-size acceptance, SEU probing, weight integrity
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: torch>=2.0
+Requires-Dist: torchvision>=0.15
+Dynamic: license-file
