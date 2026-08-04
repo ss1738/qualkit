@@ -1,0 +1,10 @@
+[project]
+name = "qualkit"
+version = "0.1.0"
+description = "Pre-flight assurance checks for compressed ML models: coverage forecasting, set-size acceptance, SEU probing, weight integrity"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0", "torchvision>=0.15"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
