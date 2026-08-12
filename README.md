@@ -8,6 +8,22 @@ guarantee and what your fault exposure is.
 Four checks, each implementing a measured finding from a 12-finding research
 programme (github.com/ss1738/euroSAT-CNN-landcover, all reproducible):
 
+```mermaid
+flowchart TD
+    A[fp32 reference model] --> D[report.run_all]
+    B[quantized deployment model] --> D
+    C[calibration + probe loaders] --> D
+    D --> E["1. Coverage forecast\nTV distance vs reference"]
+    D --> F["2. Set-size acceptance\nmean set size after recal"]
+    D --> G["3. SEU probe\nsingle-bit-flip fault exposure"]
+    D --> H["4. Weight integrity baseline\nhash-to-inference cost ratio"]
+    E --> I[qualkit_report.json / .md]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[Assurance Card, bound to weights digest]
+```
+
 1. **Coverage forecast.** Coverage loss under stale calibration is bounded by
    (and on peaked tasks approximately equals) the TV distance between your
    reference and deployment score distributions, computed on the labeled
